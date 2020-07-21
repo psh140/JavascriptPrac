@@ -11,43 +11,151 @@
 </head>
 
 <body>
-    <!-- Page 1 -->
-    <div data-role="page" id="">
+    <!-- Page 1 List View Page -->
+    <div data-role="page" id="listview">
         <div data-role="header" id="" data-position="fixed">
-            <a href=""><img src="" alt=""></a>
-            <h3>header 1</h3>
+            <a href="#page_tab"><img src="Img/heart-black.png" alt=""></a>
+            <!-- <img src="Img/heart-black.png" alt=""> -->
+            <h3>listview</h3>
+            <a href="#dialog" class="ui-btn-right"><img src="Img/home-black.png" alt=""></a>
         </div>
         <div data-role="content">
-
+            <p>content</p>
+            <ol data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="insert keyword...">
+                <li data-role="listdivider" data-divider-theme="c">A</li>
+                <li><a href="#">ariana</a></li>
+                <li data-role="listdivider">B</li>
+                <li><a href="#">b-boy</a></li>
+                <li data-role="listdivider">L</li>
+                <li><a href="#">List 1 <span class="ui-li-count">1</span></a></li>
+                <li><a href="#">List 2 <span class="ui-li-count">heart</span></a></li>
+                <li><a href="#">List 3 <span class="ui-li-count">good</span></a></li>
+            </ol>
         </div>
         <div data-role="footer" id="" data-position="fixed">
-
+            <h4>cbnu</h4>
         </div>
     </div>
 
-    <!-- Page 2 -->
-    <div data-role="page" id="">
+    <!-- Page 2 Page Tab Page -->
+    <div data-role="page" id="page_tab">
+        <!-- panel은 header 위에 -->
+        <div data-role="panel" id="panel1" data-display="overlay">
+            <form action="">
+                <h3>login panel</h3>
+                <label for="name">ID : </label>
+                <input type="text" id="name" name="name" data-mini="true" data-clear-btn="true">
+                <label for="name">Password : </label>
+                <input type="password" id="password" name="name" data-mini="true" data-clear-btn="true">
+                <!-- 표모양 -->
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" data-role="button" data-rel="close">sign in</a></div>
+                    <div class="ui-block-b"><a href="#" data-role="button" data-rel="close">cancel</a></div>
+                </div>
+            </form>
+        </div>
         <div data-role="header" id="" data-position="fixed">
-            <h3>header 2</h3>
+            <h3>page tab</h3>
+            <a href="#listview"><img src="Img/heart-black.png" alt=""></a>
+            <a href="#dialog" class="ui-btn-right"><img src="Img/home-black.png" alt=""></a>
         </div>
         <div data-role="content">
-
+            <a href="#panel1" data-role="button" data-inline="true">login panel</a>
+            <div data-role="tabs">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tab1">Image 1</a></li>
+                        <li><a href="#tab2">Image 2</a></li>
+                        <li><a href="#tab3">Image 3</a></li>
+                    </ul>
+                </div>
+                <div id="tab1"><img src="img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg" alt="" width="100%"></div>
+                <div id="tab2"><img src="img/element5-digital-uE2T1tCFsn8-unsplash.jpg" alt="" width="100%"></div>
+                <div id="tab3"><img src="img/tom-barrett-M0AWNxnLaMw-unsplash.jpg" alt="" width="100%"></div>
+            </div>
         </div>
         <div data-role="footer" id="" data-position="fixed">
-
+            <h4>cbnu</h4>
         </div>
     </div>
 
-    <!-- Page 3 -->
-    <div data-role="page" id="">
+    <!-- Page 3 Dialog Page-->
+    <div data-role="page" id="dialog">
         <div data-role="header" id="" data-position="fixed">
-            <h3>header 3</h3>
+            <h3>2 Type Dialog</h3>
+            <a href="#listview"><img src="Img/heart-black.png" alt=""></a>
+            <a href="#coll" class="ui-btn-right"><img src="Img/home-black.png" alt=""></a>
         </div>
         <div data-role="content">
+            <a href="#dialog_1" data-role="button">dialog</a>
+            <a href="#dialog_a" data-role="button" data-rel="dialog">dialog sub page</a>
+        </div>
+        <div data-role="footer" id="" data-position="fixed">
+            <h4>cbnu</h4>
+        </div>
+    </div>
+
+    <!-- Page 4 Sub Dialog -->
+    <div data-role="dialog" id="dialog_1" data-dialog="true">
+        <div data-role="header" id="" data-position="fixed">
+            <h3>Dialog 2</h3>
+            <a href="#dialog" class="ui-btn-right"><img src="Img/home-black.png" alt=""></a>
+        </div>
+        <div data-role="content">
+            <p>hihi This is Dialog</p>
 
         </div>
         <div data-role="footer" id="" data-position="fixed">
+            <h4>cbnu</h4>
+        </div>
+    </div>
 
+    <!-- Page 5 Sub Page -->
+    <div data-role="page" id="dialog_a">
+        <div data-role="header" id="" data-position="fixed">
+            <h3>Dialog A</h3>
+            <a href="dialog" class="ui-btn-right"><img src="Img/home-black.png" alt=""></a>
+        </div>
+        <div data-role="content">
+            <p>HIHI This is Sub Page</p>
+        </div>
+        <div data-role="footer" id="" data-position="fixed">
+            <h4>cbnu</h4>
+        </div>
+    </div>
+
+    <!-- Page 6 -->
+    <div data-role="page" id="coll">
+        <div data-role="header" id="" data-position="fixed">
+            <h3>collapsible panel</h3>
+            <a href="#dialog" class="ui-btn-right"><img src="Img/home-black.png" alt=""></a>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible">
+                <h3>Title1</h3>
+                <pre>
+                    saorv apwoeuravn;oetaebraerar
+                    avesirouavneiro;vaerav
+                    aesiorauneil;odfasdfv
+                    atkbasmtl;atkbasmtlsdtbasr
+                    asrbasrfsdfs
+                </pre>
+            </div>
+            <div data-role="collapsible">
+                <h3>Title2</h3>
+                <p>aslerbyalebiarsbaerbae</p>
+                <p>darvynaslksdcfszdfzxdf</p>
+                <p>aivynlifasdcsdddfreeddmeebnff</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>Title3</h3>
+                        .dwemeneidbd33fkfkfmdmcff <br>
+                        jerhfss22ddmdj4rbf <br>
+                    dslrkyanwlei4vyalw34sldfuasd <br>
+            </div>
+        </div>
+        <div data-role="footer" id="" data-position="fixed">
+            <h4>cbnu</h4>
         </div>
     </div>
 </body>
