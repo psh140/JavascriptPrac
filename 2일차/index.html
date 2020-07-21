@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Page1 -->
+    <div data-role="page" id="main">
+        <div data-role="header" data-position="fixed" data-fullscreen="true">
+            <h3>First Page</h3>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page2" >page2</a></li>
+                    <li><a href="#page3" class="ui-btn-active">page3</a></li>
+                    <li><a href="#page3" class="ui-btn-active">page3</a></li>
+                    <li><a href="#page3" >page3</a></li>
+                    <li><a href="#page3" class="ui-btn-active">page3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-fullscreen="true">
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="http://www.naver.com">naver</a>
+                <a href="http://www.google.com">Google</a>
+                <a href="http://www.github.com">GitHub</a>
+                <a href="#">bar button4</a>
+                <a href="#">bar button5</a>
+                <a href="#">bar button6</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page 2 -->
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <a href="#main" class="ui-btn-left">Home</a>
+            <h3>Second Page</h3>
+            <a href="#page3" class="ui-btn-right">Page 3</a>
+        </div>
+        <div data-role="content">
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+        </div>
+        <div data-role="footer">
+            <h3>footer</h3>
+        </div>
+    </div>
+    <!-- Page 3 -->
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <a href="#page2" class="ui-btn-left">Page 2</a>
+            <h3>Third Page</h3>
+            <a href="#main" class="ui-btn-right">Home</a>
+        </div>
+        <div data-role="content">
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+            <p>content</p>
+        </div>
+        <div data-role="footer">
+            <h3>footer</h3>
+        </div>
+    </div>
+</body>
+
+</html>

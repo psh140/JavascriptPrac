@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+    <!-- custom icon -->
+    <style>
+        .ui-icon-heartB-icon:after {
+            background: url(/2일차/Img/heart-black.png);
+            background-size: cover
+        }
+
+        .ui-icon-heartW-icon:after {
+            background: url(/2일차/Img/heart-white.png);
+            background-size: 14px 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="main">
+        <div data-role="header" data-position="fixed">
+            <h3>header</h3>
+            <a href="#page2">page2</a>
+        </div>
+        <div data-role="content">
+            <p>create button</p>
+            <!-- Jquery는 a타입으로 버튼을 만듬 -->
+            <!-- <a href="#" data-role="button" data-mini="true">1. a tag button</a>
+            <button>2. button tag button</button>
+            <input type="button" value="3. input tag button" data-icon="home">
+            <input type="submit" value="submit button" data-icon="search">
+            <input type="reset" value="reset button" data-icon="reset">
+            <button data-icon="arrow-r" data-iconpos="notext" >가나다</button>
+            <button data-icon="arrow-l" data-iconpos="left">왼</button>
+            <button data-icon="arrow-d" data-iconpos="bottom">아래</button>
+            <button data-icon="arrow-u" data-iconpos="top">위</button>
+            <button data-icon="arrow-r" data-iconpos="right">오</button>
+
+            <button data-icon="heartB-icon" data-iconpos="notext">하트</button>
+            <button data-icon="heart">하트 2</button>
+            <input type="image" value="image button" src="img/index_image.png"> -->
+
+            <div data-role="controlgroup">
+                <a href="#" data-role="button" data-theme="a">buttonA</a>
+                <a href="#" data-role="button" data-theme="b">buttonB</a>
+                <a href="#" data-role="button" data-theme="c">buttonC</a>
+                <a href="#" data-role="button" data-theme="d">buttonD</a>
+                <a href="#" data-role="button" data-theme="e">buttonE</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-role="button">button1</a>
+                <a href="#" data-role="button">button2</a>
+                <a href="#" data-role="button">button3</a>
+                <a href="#" data-role="button">button4</a>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer</h4>
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header" data-position="fixed">
+            <h3>page2</h3> 
+            <a href="#main">home</a>
+        </div>
+        <div data-role="content">
+            <p>create list</p><br>
+            <ul data-role="listview" data-inset="true" data-split-icon="heart" data-split-theme="b">
+                <li><a href="#main">list1</a><a href="#main"></a></li>
+                <li><a href="#">list2</a><a href="#main"></a></li>
+                <li><a href="#">list3</a><a href="#main"></a></li>
+                <li><a href="#">list4</a><a href="#main"></a></li>
+                <li><a href="#">list5</a><a href="#main"></a></li>
+                <li><a href="#">list6</a><a href="#main"></a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>footer</h4>
+        </div>
+    </div>
+</body>
+
+</html>
