@@ -12,6 +12,11 @@
         li {
             list-style: none;
         }
+        .photo { list-style: none; padding: 0; margin: 0;}
+        .photo li { float: left; width: 50%;}
+        .photo li a { display: block; margin: 5px; border: 1px;}
+        .photo li img { display: block; width: 70%;}
+        .photo li img:hover {display: block; width: 100%;}
     </style>
 </head>
 
@@ -160,11 +165,11 @@
         </div>
         <div data-role="content">
 
-            <ul>
-                <li><a href="img/discription_01.jpg"><img src="img/discription_01.jpg" alt=""></a></li>
-                <li><a href="img/discription_02.jpg"><img src="img/discription_02.jpg" alt=""></a></li>
-                <li><a href="img/discription_03.jpg"><img src="img/discription_03.jpg" alt=""></a></li>
-                <li><a href="img/discription_04.jpg"><img src="img/discription_04.jpg" alt=""></a></li>
+            <ul class="photo">
+                <li><a href="img/discription_01.jpg" rel="external"><img src="img/discription_01.jpg" alt=""></a></li>
+                <li><a href="img/discription_02.jpg" rel="external"><img src="img/discription_02.jpg" alt=""></a></li>
+                <li><a href="img/discription_03.jpg" rel="external"><img src="img/discription_03.jpg" alt=""></a></li>
+                <li><a href="img/discription_04.jpg" rel="external"><img src="img/discription_04.jpg" alt=""></a></li>
             </ul>
         </div>
         <div data-role="footer" data-position="fixed">
