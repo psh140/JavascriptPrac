@@ -1,0 +1,21 @@
+body { background-image: url(../Img/desert.jpg); }
+input[type="text"] { background: blueviolet;}
+input[type="password"] { background: brown;}
+
+/* #header h1  { color: red; }
+#section h1 { color: orange; } */
+
+#header > h1 { color: red; }
+#section > h1 { color: blue; }
+
+h1:hover { color: blue; }
+h1:active { color: brown; }
+
+.item { color: red; }
+.header { background-color: blue; }
+
+p:nth-child(1) { }
+p:nth-child(2) { font-size: 100%; }
+p:nth-child(3) { font-size: 150%; }
+p:nth-child(4) { font-size: 200%; }
+

@@ -1,0 +1,68 @@
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    margin: 10px; padding: 30px;
+} */
+/* #box {
+    display: inline-block;
+    background-color: blue;
+    width: 100px; height: 50px;
+    margin: 10px;
+    border: olive 2px solid; 
+}
+
+body {
+    background-image: url(../Img/desert.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: olive;
+    background-attachment: fixed;
+    background-position: 0px 50%;
+} */
+
+/* .font_big { font-size: 2em;}
+.font_italic { font-style: italic; }
+.font_bold { font-weight: bold; }
+.font_center { text-align: center; }
+
+.button {
+    width: 150px;
+    height: 70px;
+    background-color: #FF6A00;
+    border: 10px solid #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #A9A9A9;
+}
+
+.button > a {
+    display: block;
+    line-height: 70px;
+} */
+
+.box {
+    width: 100px; height: 100px;
+    position: absolute;
+}
+.box:nth-child(1) { 
+    background-color: red; 
+    left: 10px; top: 10px;
+    z-index: 100;
+}
+.box:nth-child(2) {
+    background-color: blue ;
+    left: 50px; top: 50px;
+    z-index: 10;
+}
+.box:nth-child(3) {
+    background-color: green;
+    left: 90px; top: 90px;
+    z-index: 1;
+}
+
+body > div {
+    width: 400px; height: 200px;
+    border: 3px solid black;
+    position: relative;
+}
