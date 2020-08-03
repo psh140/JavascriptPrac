@@ -1,0 +1,51 @@
+/* div.container {
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+div.item {
+    float: left;
+    margin: 0 3px;
+    padding: 10px;
+    border: 1px solid black;
+} */
+
+/* * { 
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 960px;
+} */
+
+/* body {
+    width: 500px;
+    margin: 10px auto;
+}
+
+#middle {
+    overflow: hidden;
+}
+
+#left {
+    float: left;
+    width: 150px;
+    background: red;
+}
+
+#right {
+    float: right;
+    width: 350px;
+    background: blue;
+}
+#top {
+    background: seagreen;
+}
+
+#bottom {
+    background: cornflowerblue;
+} */
+/* div가 block특성을 가지기 때문에 */
+

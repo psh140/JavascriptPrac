@@ -1,0 +1,58 @@
+/* @media screen and (max-width: 767px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        background-color: green;
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#menu {
+    width: 260px;
+    float: left;
+}
+
+#section {
+    width: 700px;
+    float: right;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        width: auto;
+    }
+
+    #menu {
+        width: auto;
+        float: none;
+    }
+
+    #section {
+        width: auto;
+        float: none;
+    }
+}
