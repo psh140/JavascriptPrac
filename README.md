@@ -17,3 +17,6 @@ css 연습
 
 6일차 03.08.20  
 css layout 연습, 반응형 웹, Javascript 기본  
+
+7일차 04.08.20  
+JavaScript basic syntax, class 연습, DOM(Document Object Model)  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        window.onload = function () { //page initiate
+    // document.querySelector('h1').style.backgroundColor = 'red';
+    // var header = document.getElementById('header');
+    // header.style.backgroundColor = 'orange';
+    // header.style.background = 'red';
+    // header.innerHTML = 'This is JavaScript.';
+
+    // var headers = document.querySelectorAll('h1');
+
+    // for (let index = 0; index < headers.length; index++) {
+    //     let header = headers[index];
+
+    //     header.style.color = 'orange';
+    //     header.style.background = 'red';
+    //     header.innerHTML = 'JavaScript ' + index;
+    // let output = '';
+
+    // for (let index = 0; index < 256; index++) {
+    //     output += '<div></div>';
+    // }
+    // document.body.innerHTML = output;
+
+    // let divs = document.querySelectorAll('div');
+    // for (let index = 0; index < divs.length; index++) {
+    //     let div = divs[index];
+
+    //     div.style.height = '3.5px';
+    //     div.style.background = 'rgb(' + index + ', ' + index + ', ' + index + ')';
+    // }
+
+    // let image = document.getElementById('image');
+
+    // image.src = 'http://placehold.it/300x200';
+    // image.width = 300;
+    // image.height = 200;
+
+    document.body.setAttribute('data-custom', 'This is Hugh');
+
+    let dataCustom = document.body.getAttribute('data-custom');
+    alert(dataCustom);
+
+    let clock = document.getElementById('clock');
+    
+    setInterval(function () {
+        let now = new Date();
+        clock.innerHTML = now.toString();
+    }, 1000 );
+
+};
+    </script>
+</head>
+
+<body>
+    <!-- <img src="" alt="" id="image"> -->
+    <h1 id="clock"></h1> 
+</body>
+
+</html>
