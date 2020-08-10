@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradation</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $('document').ready(function () {
+           //문서 객체 추가
+            let output = '';
+           for (let index = 0; index < 256; index++) {
+               output += '<div></div>';
+           } 
+           document.body.innerHTML = output;
+
+           $('div').css({
+               height: 2,
+               backgroundColor: function (index) {
+                   return 'rgb(' + index + ', ' + index + ', ' + index + ')';
+               }
+           });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script>
+        window.onload = function () {
+            // Initiate Image
+            let image = document.getElementById('image');
+            image.src = 'http://placehold.it/600x300';
+
+            // If event is occured, execute funtion.
+            // Traditional Event Model
+            let btn1 = document.getElementById('btn1');
+        btn1.onclick = function () {
+            image.src = 'http://placehold.it/600x400';
+        }
+        };
+
+        // Inline Event Model
+        function btn2() {
+            image.src = 'http://placehold.it/640x480';
+        }
+    </script>
+</head>
+<body>
+    <!-- Traditional  Event Model -->
+    <button id="btn1">btn1</button>
+
+    <!-- Inline Event Model -->
+    <button onclick="btn2();">btn2</button>
+
+    <!-- Reference Event Origin -->
+    <button id="btn3">btn3</button><br>
+    <!-- Initiate Image -->
+    <img id="image">
+
+
+    <script>
+        document.getElementById('btn3').onclick = function () {
+            this.textContent = this.textContent + '*';
+        }
+    </script>
+</body>
+</html>

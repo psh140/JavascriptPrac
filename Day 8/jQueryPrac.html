@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function () { //Javascript
+            let h1tag = document.querySelector('h1'); //selecter 획득
+            h1tag.onclick = function () { //event 설정
+                alert('hihi Javascript');
+            }
+
+            let image = document.querySelector('img');
+            image.onclick = function () {
+                alert('I am image Javascript');
+            }
+        }
+
+        $(document).ready(function () { //페이지 최초실행 JQuery
+                    $('h1').click(function () {
+                        alert('hihi jQuery');
+                    });
+
+                    $('img').click(function () {
+                        alert('I am Image jQuery')
+                    })
+                });
+    </script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <img src="http://placehold.it/100x100" alt="">
+</body>
+
+</html>

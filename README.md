@@ -20,3 +20,6 @@ css layout 연습, 반응형 웹, Javascript 기본
 
 7일차 04.08.20  
 JavaScript basic syntax, class 연습, DOM(Document Object Model)  
+
+8일차 10.08.20  
+Event 처리, JQuery 기본, JQuery와 Javascript 문법 차이 비교  

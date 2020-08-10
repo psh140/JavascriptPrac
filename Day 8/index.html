@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Handling</title>
+    <script>
+        // 웹페이지 최초 호출 시 실행
+        // 이벤트 형식의 함수(ex: window.onload)로 등록된 경우 body 태그보다 늦게 실행
+        window.onload = function () {
+            // var image = document.getElementById('image');
+
+            // image.src = 'http://placehold.it/300x200';
+            // image.width = 300;
+            // image.height = 200;
+
+            // let clock = document.getElementById('clock');
+
+            // setInterval : 지정된 시간 간격마다 내부 함수 호출
+            // setInterval(function () {
+            //     var now = new Date();
+            //     clock.innerHTML = "Today is " + now.toString();
+            // }, 1000)
+
+            // 현재 페이지 최초 실행될 때
+            let btn = document.getElementById('btn');
+            btn.onclick = function () {
+              alert('Button3 Clicked');  
+            };
+        };
+
+        // Inline event model 사용 권장 
+        function buttonClick() {
+            alert('Button2 Clicked');
+        }
+    </script>
+    <!-- <script src="js/js.js"></script> -->
+</head>
+
+<body>
+    <!-- 이벤트가 있을 시 body를 먼저 봄 
+        동적으로 실행-->
+    <!-- <img id="image"> -->
+
+    <h1 id="clock"></h1>
+
+    <button onclick="alert('click')">button</button>
+
+    <!-- 사용 권장 -->
+    <button onclick="buttonClick()">Button2</button>
+
+    <!-- 복잡 -->
+    <button id="btn">Button3</button>
+
+
+</body>
+
+</html>
