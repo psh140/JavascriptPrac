@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Event Delete</title>
+    <script>
+        $(function () {
+            // $('a').click(function (event) {
+            //     alert('Stay Here');
+
+            //     event.preventDefault();
+            // });
+
+            $('form').submit(function (event) {
+                //값 추출
+                var number = $('#number').val();
+
+                //유효성 검사
+                // if (value.replace(/[가-힣]/g, '').length == 0) {
+                //     alert('한글입니다.');
+                // } else {
+                //     alert('put hangle');
+                //     event.preventDefault();
+                // }
+
+                if (number.replace(/[0-9]/g, '').length == 0) {
+                    alert('It\'s number');
+                } else {
+                    alert('please put number only');
+                    event.preventDefault();
+                }
+
+            })
+
+
+            // $('form').submit(function (event) {
+            //     var value = $('input').val();
+            // })
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <a href="http://naver.com">NAVER</a> -->
+    <form>
+        <label>Name</label>
+        <!-- <input type="text"> -->
+        <input type="text" id="number">
+        <input type="submit">
+    </form>
+</body>
+
+</html>

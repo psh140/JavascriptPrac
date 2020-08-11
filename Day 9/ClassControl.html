@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Class Control</title>
+    <style>
+        /* #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        #box:hover {
+            background-color: blue;
+            border-radius: 50px;
+        } */
+    </style>
+    <script>
+        window.onload = function () {
+
+        //     let box = document.getElementById('box');
+
+        //     box.onmouseover = function () {
+        //         box.style.backgroundColor = 'blue';
+        //         box.style.borderRadius = '50px';
+        //     };
+
+        //     box.onmouseout = function () {
+        //         box.style.backgroundColor = 'red';
+        //         box.style.borderRadius = '0';
+        //     };
+
+            // box.addEventListener('mouseover', function () {
+            //     box.style.backgroundColor = 'blue';
+            //     box.style.borderRadius = '50px';
+            // });
+
+            // box.addEventListener('mouseout', function () {
+            //     box.style.backgroundColor = 'red';
+            //     box.style.borderRadius = '0';
+            // });
+
+            // let h1Click = document.querySelector('h1');
+            // h1Click.onclick = function () {
+            //     alert('hello world!');
+
+            //     h1Click.onclick = null;
+            // };
+            
+        };
+        $(function() {
+            // $('#box').hover(function () {
+            //     //handle in
+            //     $('#box').addClass('hover');
+            // }, function () {
+            //     //handle out
+            //     $('#box').removeClass('hover');
+            // });
+
+            // $('h1').click(function () {
+            //     alert('Hello World!!');
+            // });
+
+            $('img').click(function () {
+                alert('Image');
+            });
+
+            $('#box1').click(function () {
+                alert('box1');
+            });
+
+            $('.box2').click(function () {
+                alert('box2');
+            });
+
+            $('h1').hover(function () {
+                $(this).css({
+                    background: 'red',
+                    color: 'white',
+                });
+            }, function () {
+                background = '',
+                color = ''
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <div id="box"></div> -->
+    <h1>Click Here !</h1>
+
+    <h1>Hi Hi</h1>
+    <img src="http://placehold.it/100x100" alt=""><br>
+    <div id="box1">box 1</div>
+    <span class="box2">box 2</span><br>
+
+    <h1 id="box">ddd</h1>
+
+
+</body>
+
+</html>

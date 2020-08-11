@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval</title>
+    <script>
+        window.onload = function () {
+            var count = 0;
+            var image = document.getElementById('image');
+            // var button = document.querySelector('button');
+            var frames = [
+                'img/0.jpg', 'img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg']; 
+
+            var Interval = setInterval(myInterval, 1000);
+
+            function myInterval() {
+                image.src = frames[count % frames.length];
+                count++;  
+            }
+
+            // button.onclick(function () {
+            //     clearAl
+            // });
+        };
+
+    </script>
+</head>
+<body>
+    <!-- <button>STOP</button><br> -->
+    <img id="image">
+</body>
+</html>

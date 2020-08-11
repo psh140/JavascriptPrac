@@ -23,3 +23,6 @@ JavaScript basic syntax, class 연습, DOM(Document Object Model)
 
 8일차 10.08.20  
 Event 처리, JQuery 기본, JQuery와 Javascript 문법 차이 비교  
+
+9일차 11.08.20  
+jQuery Class control, Event, Visual Effect, Focus, jQuery DO create  
