@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동위 선택자</title>
+    <style>
+        h1 ~ * {
+            color: blue;
+        }
+
+        input:checked + div {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div class="section-a">
+        <h1>동위선택자 연습</h1>
+        <h2>동위선택자 연습</h1>
+        <h3>동위선택자 연습</h1>
+        <h4>동위선택자 연습</h1>
+    </div>
+    <h1>동위선택자 2</h1>
+    <h2>동위선택자 2</h1>
+    <h3>동위선택자 2</h1>
+</body>
+</html>

@@ -26,3 +26,8 @@ Event 처리, JQuery 기본, JQuery와 Javascript 문법 차이 비교
 
 9일차 11.08.20  
 jQuery Class control, Event, Visual Effect, Focus, jQuery DO create  
+
+10일차 17.08.20  
+finterest clone  
+
+html5 웹프로그래밍 입문 한빛아카데미 chapter 14 프로젝트

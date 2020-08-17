@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/projcss.css">
+    <script src="js/project.js"></script>
+    <title>Finterest</title>
+    <script>
+        // // 풀다운메뉴
+        $(function () {
+
+            $('.outer-menu').hover(function () {
+                // mouse over
+                $(this).find('.inner-menu').css('display', 'block');
+            }, function () {
+                // mouse down
+                $(this).find('.inner-menu').css('display', 'none');
+            });
+        });
+
+        // 페이지
+        $(function () {
+            $('#main-section').imagesLoaded(function () {
+                $("main-section").mansonry({
+                    itemSelector: '.paper',
+                    columnWidth: 230,
+                    isAnimated: true
+                });
+            });
+        });
+
+        // // 라이트박스
+        // $(function () {
+
+        // });
+    </script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header id="main-header">
+        <div class="header-search-form">
+            <form action="">
+                <input type="search" class="input-search">
+                <input type="submit" value="검색" class="input-search-submit">
+            </form>
+        </div>
+        <h1 class="header-title">Finterest</h1>
+        <div class="header-menu">
+            <ul class="outer-menu">
+                <li>
+                    <a href="#">Information</a>
+                    <ul class="inner-menu">
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="outer-menu">
+                <li>
+                    <a href="#">user</a>
+                    <ul class="inner-menu">
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                        <li><a href="#">data</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 네비게이션 메뉴 -->
+    <nav id="main-navigation">
+        <ul>
+            <li><a href="#">following</a></li>
+            <li><a href="#">categories</a></li>
+            <li><a href="#">everything</a></li>
+            <li><a href="#">popular</a></li>
+            <li><a href="#">gift</a></li>
+        </ul>
+    </nav>
+
+    <!-- 메인 -->
+    <section id="main-section">
+        <div class="paper">
+            <div class="paper-holder">
+                <a href=""><img src="http://placehold.it/190x306" alt=""></a>
+            </div>
+            <p class="paper-description">descriptaaaaaaaadddddddddddddd</p>
+            <div class="paper-content">
+                <a href="#" class="paper-link">
+                    <img src="http://placehold.it/50x50" alt="">
+                </a>
+                <p class="paper-text">paperasdasdasdasdasdasaadasd</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 라이트박스 -->
+    <div id="darken-background">
+        <div id="lightbox">
+            <div class="user-information">
+                <a href="#" class="user-information-image">
+                    <img src="http://placehold.it/70x70" alt="">
+                </a>
+                <div class="user-information-text">
+                    <h3>User</h3>
+                    <p>wqueqyhwidkqwd</p>
+                </div>
+            </div>
+            <hr class="lightbox-splitter">
+            <img src="http://placehold.it/600x750" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
