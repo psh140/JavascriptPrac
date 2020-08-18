@@ -30,4 +30,11 @@ jQuery Class control, Event, Visual Effect, Focus, jQuery DO create
 10일차 17.08.20  
 finterest clone  
 
-html5 웹프로그래밍 입문 한빛아카데미 chapter 14 프로젝트
+11일차 18.08.20  
+UI프로그래밍 페이지 만들기  
+
+숙제  
+제시된 UI프로그래밍 완성  
+css에 설명문 추가  
+html 출력 내용과 소스코드 부분내용 워드로 제출  
+황교수님 메일 smhwang@kut.ac.kr 목요일 저녁까지  
