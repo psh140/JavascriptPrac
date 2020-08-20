@@ -128,7 +128,8 @@ html { background: #f7f5f5; }
 }
 
 /* ---------------------------Content 영역---------------------------- */
-
+/* content 영역의 크기를 width값을 주어 정하고 가운데로 지정하기 위해 margin값을 줌 
+    부모 객체가 overflow hidden일 때 자식 객체는 부모의 영역을 벗어날 수 없음 */
 #content {
     width: 960px;
     margin: 0 auto;
@@ -139,6 +140,7 @@ html { background: #f7f5f5; }
 }
 
 /* Main Section */
+/* main section을 왼쪽으로 배치하고 크기를 사이드바 영역과 나누어 가짐 */
 #content > #main_section {
     /* margin: 5px; */
     /* padding: 20px; */
@@ -155,6 +157,7 @@ html { background: #f7f5f5; }
 
 /* ---------------------------사이드바 영역---------------------------- */
 /* Main Aside */
+/* 사이드바를 오른쪽으로 배치하고 나머지 크기를 배정해줌 */
 #content > #main_aside {
     float: right;
     width: 200px;
@@ -199,8 +202,7 @@ section.buttons {
     overflow: hidden;
 }
 
-/* 안에서 자리를 잡아서 영역 나누기 */
-
+/* 버튼안에서 자리를 잡아서 반반씩 영역 나누기 */
 section.buttons > label {
     /* border: 1px solid black; */
     width: 50%;
@@ -239,12 +241,12 @@ input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2) {
     border-top: none; /* 위 라인 삭제 */
 }
 .thumbnail {
-    float: left;
+    float: left; /* 섬네일 사진을 왼쪽으로 정렬하여 설명글이 오른쪽으로 오게 함 */
 }
 
 .description {
     float: left;
-    margin-left: 10px;
+    margin-left: 10px; /* 왼쪽 margin을 주어 사진과 간격을 줌 */
 }
 
 .description > strong {
