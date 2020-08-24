@@ -33,8 +33,5 @@ finterest clone
 11일차 18.08.20  
 UI프로그래밍 페이지 만들기  
 
-숙제  
-제시된 UI프로그래밍 완성  
-css에 설명문 추가  
-html 출력 내용과 소스코드 부분내용 워드로 제출  
-황교수님 메일 smhwang@kut.ac.kr 목요일 저녁까지  
+12일차 24.08.20  
+JSP 연습, Scriptlet, Declaration, Expression, Form Tag 복습 필수  
