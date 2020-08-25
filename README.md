@@ -35,3 +35,6 @@ UI프로그래밍 페이지 만들기
 
 12일차 24.08.20  
 JSP 연습, Scriptlet, Declaration, Expression, Form Tag 복습 필수  
+
+13일차 25.08.20  
+다른페이지로 데이터 넘기기, File Upload, validation  
