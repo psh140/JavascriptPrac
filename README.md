@@ -38,3 +38,15 @@ JSP 연습, Scriptlet, Declaration, Expression, Form Tag 복습 필수
 
 13일차 25.08.20  
 다른페이지로 데이터 넘기기, File Upload, validation  
+
+14일차 31.08.20  
+Exception, Session, Cookie, JDBC  
+
+15일차 01.09.20  
+결석. 템플릿 작성함.  
+
+16일차 04.09.20  
+CRUD 연습(Create Read Delete)  
+
+17일차 07.09.20  
+CRUD 연습(Update), 회원관리, 게시판    
