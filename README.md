@@ -50,3 +50,6 @@ CRUD 연습(Create Read Delete)
 
 17일차 07.09.20  
 CRUD 연습(Update), 회원관리, 게시판    
+
+18일차 08.09.20  
+쇼핑몰 만들기 숙제, board 만들기
