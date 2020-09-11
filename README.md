@@ -52,4 +52,7 @@ CRUD 연습(Create Read Delete)
 CRUD 연습(Update), 회원관리, 게시판    
 
 18일차 08.09.20  
-쇼핑몰 만들기 숙제, board 만들기
+쇼핑몰 만들기 숙제, board 만들기, 댓글쓰기, 삭제    
+
+19일차 11.09.20  
+페이지 넘기기, 댓글 수정, servlet 기초    
